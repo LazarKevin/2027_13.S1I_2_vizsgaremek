@@ -1,0 +1,11 @@
+8 Erőforrás terv
+ 
+Operációs rendszer: Windows Server 2025
+Webszerver: Apache 2.4
+Adatbázisszerver: MySQL 8
+Konténerkezelés: nincs, az alkalmazás közvetlenül a szerverre települ.
+Tárhely: 10 GB az alkalmazásnak, az adatbázisnak és a biztonsági mentéseknek, amelyből körülbelül 2 GB a tényleges adat (főként az ételképek). Ezen felül az operációs rendszer helyigénye körülbelül 60 GB.
+Külön program: PHP 8.3, Composer (PHP csomagkezelő), Node.js és npm (a Vue.js frontend fordításához), MySQL szerver, valamint SMTP-hozzáférés a foglalási visszaigazoló e-mailek kiküldéséhez.
+Hálózati beállítás: a 80-as (HTTP, csak átirányításra) és a 443-as (HTTPS) port megnyitása. A MySQL 3306-os portja kívülről nem érhető el, csak a szerveren belülről. A vendégek Wi-Fi hálózatáról a szervernek elérhetőnek kell lennie.
+Saját domain: igen, tervezetten a forkandbyte.hu, ingyenes Let's Encrypt HTTPS-tanúsítvánnyal.
+Felhő: nem, a rendszer helyi szerveren (az étteremben elhelyezett gépen vagy virtuális gépen) fut.
