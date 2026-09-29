@@ -1,0 +1,37 @@
+
+--------------Törlés---------------
+-"A pincér mint közvetítő kiesik a láncból, és ezzel
+megszűnik a félrehallásból eredő hiba is." -Delete
+
+-Egy hagyományos, nem gyorsétterem típusú étteremben a vendég kiszolgálása ma szinte teljes egészében
+szóban és papíron zajlik   -A hagyományos helyett legyen "legtöbb"
+
+-"Egyetlen mozzanat marad szándékosan hagyományos: az étel fizikai kiszolgálása az asztalnál. Ez
+különbözteti meg a rendszert a gyorséttermi megoldásoktól a cél nem az önkiszolgálás bevezetése, hanem
+a felszolgáló munkájának pontosabbá tétele" -Delete
+
+
+
+----------Szerepkörök--------------
+Konyhás dolgai:
+Ő az aki dolgozik és szól a séfnek ha bármi baja/kérdése van, ő hozza ki a raktárból a hozzávalókat ha kevés van akkor kijelzi hogy mennyi az a kevés és ha már elfogyott akkor szól a séfnek aki az összes olyan ételt mely azt az alapanyagot tartalmazza "Mai nap nem elérhető"-be teszi.
+
+Séf dolgai:
+Ő az aki csak felügyeli a konyhát és dönt esetleges kérdésekben (pl.: Étel mai napi letevéséről/pillanatnyi letevéséről), 
+
+
+
+------------Hozzáadás--------------
+-Egy gomb amit a konyhások tud lenyomni "Átmenetileg nem elérhető"
+	-Ha megnyomja még egyszer akkor visszateszi
+-Egy gomb amit a séf tud lenyomni "Mai nap nem elérhető"
+	-Ugyanez
+-Ha egy alapanyagból kevés van akkor jelezze
+
+-Konyhásoldal: nagyobb képernyőn (tablet vagy fali kijelző) ami higiéniai szempontból megfelelő, érintéssel kezelve.
+
+
+------------------------Plusz-------------------
+Mikor a nap vége van akkor egy ember megnézi hogy helyesek-e a hozzávaló mennyisége (Hiba elkerülés)
+
+
