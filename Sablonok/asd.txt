@@ -1,0 +1,27 @@
+
+----------Szerepkörök--------------
+Konyhás dolgai:
+Ő az aki dolgozik és szól a séfnek ha bármi baja/kérdése van, ő hozza ki a raktárból a hozzávalókat ha kevés van akkor kijelzi/jelzi a adatbázis hogy mennyi az a kevés és ha már elfogyott akkor szól a séfnek aki az összes olyan ételt mely azt az alapanyagot tartalmazza "Mai nap nem elérhető"-be teszi.
+(a konyhás tud olyat ha egy hirtelen kell döntenie akkor egy gombnyomással át tudja tenni az adott ételt/ételeket "átmenetileg nem elérhető"-vé) de ha véletlen nyomja meg akkor nem tudja visszaállítani hanem szól a séfnek és ő intézkedik.
+
+Séf dolgai:
+Ő az aki csak felügyeli a konyhát és dönt esetleges kérdésekben (pl.: Étel mai napi letevéséről/pillanatnyi letevéséről), ha kevés valamiből az alapanyag tud e a szerezni még az nap tehát mindent ami a konyhával alapanyagokkal kapcsolatos.
+
+
+
+------------Hozzáadás--------------
+-Egy gomb amit a konyhások tud lenyomni "Átmenetileg nem elérhető"
+	-nem tudja visszaállítani ha véletlen nyomta meg mert azt hitte vagy bármi miatt akkor egyből szól a séfnek aki korrigál
+-Egy gomb amit a séf tud csak lenyomni "Mai nap nem elérhető"
+	-a séfnek ez a gomb is meg az "átmenetileg elérhető" gomb is elérhető (csak ő tudja a "mai nap nem elérhető" és az "átmenetileg nem elérhető" gombokat ki be kapcsolni)
+-Ha egy alapanyagból kevés van akkor jelezze az adatbázis a képernyőn vagy valahol (például sárga színnel ha elfogyott akkor például pirossal de ez csak javaslat)
+
+-Konyhásoldal: nagyobb képernyőn (tablet vagy fali kijelző) ami higiéniai szempontból megfelelő, érintéssel kezelve.
+
+
+------------------------Plusz-------------------
+LEGONTOSABB a alapanyagokat úgy fogjuk tárolni az adatbázisban hogy ez egy példa 20 adag tészta 20 adag sajt 20 adag tejföl 20 adag bolognai van és ha rendelnek a vendégek 2 adag sajtos tejölös tészát és 3 adag bolognait akkor az adatbázis úgy fogjak levonni/kivonni az alapanyagok közül hogy -5 adag tészta -2 adag sajt -2 adag tejföl -3 adag bolognai szerintem ez így érthető
+
+Mikor a nap vége van akkor egy ember megnézi hogy helyesek-e a hozzávaló mennyisége (Hiba elkerülés). ha marad ki adag és még felhasználható állapotban van tehát (nem esett le a földre nem ment tönkre stb bármi miatt) akkor vissza kell adni az adazbáisban a nap végén
+
+
