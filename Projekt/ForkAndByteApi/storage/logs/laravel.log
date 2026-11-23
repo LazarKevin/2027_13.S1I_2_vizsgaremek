@@ -1,0 +1,68 @@
+[2026-11-23 13:50:05] local.ERROR: There are no commands defined in the "istall" namespace.
+
+Did you mean this?
+    install {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"istall\" namespace.
+
+Did you mean this?
+    install at C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php:695)
+[stacktrace]
+#0 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(744): Symfony/Component/Console/Application->findNamespace('istall')
+#1 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(299): Symfony/Component/Console/Application->find('istall:api')
+#2 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(196): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(205): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/laragon/www/ForkAndByteApi/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-11-23 20:48:47] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fork_byte.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: fork_byte, SQL: delete from `cache`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fork_byte.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: fork_byte, SQL: delete from `cache`) at C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php:864)
+[stacktrace]
+#0 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(820): Illuminate/Database/Connection->runQueryCallback('delete from `ca...', Array, Object(Closure))
+#1 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(621): Illuminate/Database/Connection->run('delete from `ca...', Array, Object(Closure))
+#2 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(585): Illuminate/Database/Connection->affectingStatement('delete from `ca...', Array)
+#3 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(4590): Illuminate/Database/Connection->delete('delete from `ca...', Array)
+#4 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php(450): Illuminate/Database/Query/Builder->delete()
+#5 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/Repository.php(1086): Illuminate/Cache/DatabaseStore->flush()
+#6 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php(81): Illuminate/Cache/Repository->__call('flush', Array)
+#7 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Cache/Console/ClearCommand->handle()
+#8 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#9 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#10 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#11 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#12 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate/Container/Container->call(Array)
+#13 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#14 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#15 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(1127): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(357): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Cache/Console/ClearCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(196): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(205): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/laragon/www/ForkAndByteApi/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#21 {main}
+
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fork_byte.cache' doesn't exist at C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php:629)
+[stacktrace]
+#0 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(629): PDO->prepare('delete from `ca...')
+#1 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(853): Illuminate/Database/Connection->Illuminate/Database/{closure}('delete from `ca...', Array)
+#2 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(820): Illuminate/Database/Connection->runQueryCallback('delete from `ca...', Array, Object(Closure))
+#3 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(621): Illuminate/Database/Connection->run('delete from `ca...', Array, Object(Closure))
+#4 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Connection.php(585): Illuminate/Database/Connection->affectingStatement('delete from `ca...', Array)
+#5 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(4590): Illuminate/Database/Connection->delete('delete from `ca...', Array)
+#6 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/DatabaseStore.php(450): Illuminate/Database/Query/Builder->delete()
+#7 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/Repository.php(1086): Illuminate/Cache/DatabaseStore->flush()
+#8 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Cache/Console/ClearCommand.php(81): Illuminate/Cache/Repository->__call('flush', Array)
+#9 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Cache/Console/ClearCommand->handle()
+#10 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#11 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#12 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#13 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#14 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate/Container/Container->call(Array)
+#15 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#16 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#17 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(1127): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(357): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Cache/Console/ClearCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 C:/laragon/www/ForkAndByteApi/vendor/symfony/console/Application.php(196): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(205): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/laragon/www/ForkAndByteApi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/laragon/www/ForkAndByteApi/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#23 {main}
+"} 
